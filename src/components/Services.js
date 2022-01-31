@@ -32,7 +32,7 @@ function Services() {
                     <h1 className='text-4xl font-Poppins text-center font-bold tracking-wider text-white leading-10'>Our Services </h1>
                     <p className='text-base font-Poppins text-center tracking-wide text-white'>We provide full-package solution to get your business up and running on the blockchain</p>
                 </div>
-                <div className='grid relative items-end grid-cols-1 mt-24 px-8 gap-x-8 lg:grid-cols-5 md:grid-cols-2'>
+                <div className='grid relative justify-center items-end grid-cols-1 mt-24 px-8 gap-x-8 lg:grid-cols-4 md:grid-cols-2'>
                     {
                         services.map((service, index) => (
                             <EachService key={index} color={service.color} pos={service.pos} img={service.img} title={service.title} content={service.content} />
