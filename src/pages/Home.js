@@ -28,10 +28,10 @@ function Home() {
 
   window.addEventListener('scroll', showScroll);
   return (
-      <div className='bg-black'>
+      <div className='bg-black w-full overflow-hidden'>
           <Nav />
-          <div className={`fixed bottom-10 ${scroll ? "flex" : "hidden"} hover:cursor-pointer items-center rounded-full bg-[#BE173F]  p-5 right-14`}>
-              <AiOutlineArrowUp onClick={scrollToTop} className='text-white font-bold text-2xl' />
+          <div className={`fixed bottom-10 ${scroll ? "flex" : "hidden"} z-20 hover:cursor-pointer items-center rounded-full bg-[#BE173F] p-3 md:p-4 right-4 md:right-6`}>
+              <AiOutlineArrowUp onClick={scrollToTop} className='text-white font-bold text-xl' />
           </div>
           <Hero />
           <Services />

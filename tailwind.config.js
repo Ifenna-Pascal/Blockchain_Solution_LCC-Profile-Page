@@ -5,6 +5,11 @@ module.exports = {
       container: {
         center: true,
         padding: '3rem',
+        screens: {
+          lg: '1424px',
+          xl: '1424px',
+          '2xl': '1424px',
+        },
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
