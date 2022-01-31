@@ -103,11 +103,4 @@ export const services = [
         pos:false,
         color: "#f7d9f7",
     },
-    {
-        title: "Consultations",
-        content: "Succint and insightful collaboration",
-        img: "/Imgs/voting.png",
-        pos:true,
-        color: "#f7d9f7",
-    },
 ]
