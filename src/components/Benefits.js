@@ -1,17 +1,17 @@
 import React from 'react';
-import bg from "../images/hero_bgg.svg";
+import bg from "../images/section3.jpg";
 import { Benefit_util as utils1, Benefit_util2 as utils2 } from '../utitlities/benefit_list';
 
 function Benefit_content () {
     return (
         <div>
             <div className='grid gap-x-1  md:px-15 md:ml-5 item-start grid-cols-1 md:grid-cols-2'>
-                <div className='mb-5 md:mb-0 flex flex-col gap-y-6'>
+                <div className='mb-5 md:mb-0 flex flex-col '>
                     {
                         utils1.map( (util, index) => {
                             const dat = `${util.color}`
                             return (
-                                <div key={index} className='flex items-center gap-x-4'>
+                                <div key={index} className='flex items-center gap-x-4 mb-9'>
                                 <div className={`flex p-3 w-14 h-14 rounded-md`} style={{backgroundColor:dat}}><img src={util.img} className='w-full' alt='logo'/></div>
                                 <span className={`font-Inter text-lg capitalize tracking-wider text-white font-normal`}>{util.name}</span>
                             </div>  
@@ -19,12 +19,12 @@ function Benefit_content () {
                         })
                     }                    
                 </div>
-                <div className='flex flex-col gap-y-6'>
+                <div className='flex flex-col '>
                 {
                         utils2.map( (util, index) => {
                             const dat = `${util.color}`
                             return (
-                                <div key={index} className='flex items-center gap-x-4'>
+                                <div key={index} className='flex items-center gap-x-4 mb-9'>
                                 <div className={`flex p-3 w-14 h-14 rounded-md`} style={{backgroundColor:dat}}><img src={util.img} className='w-full' alt='logo'/></div>
                                 <span className={`font-Inter text-lg capitalize tracking-wider text-white font-normal`}>{util.name}</span>
                             </div>  

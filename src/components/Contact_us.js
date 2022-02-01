@@ -2,6 +2,8 @@ import React from 'react';
 import Twos from '../utitlities/Twos';
 import bg from "../images/hero_bgg.svg";
 import { animateScroll as scroll } from "react-scroll";
+import { AiOutlineMail } from 'react-icons/ai';
+import { BsTelephone } from 'react-icons/bs';
 
 function Phone_Content () {
     return (
@@ -17,14 +19,14 @@ function Phone_Content () {
                     <button onClick={() => scroll.scrollToBottom()} className='bg-[#BE173F]  mx-3 lg:mx-0 lg:w-[40%] mb-6 text-white text-base lg:text-lg tracking-wider font-Inter lg:font-bold px-10 py-3 lg:py-4 rounded-lg' >Contact us</button>
                     <div className='w-[100%] flex-col lg:flex-row gap-y-5 justify-start lg:mt-8 items-start flex'>
                     <div className='flex items-center lg:mr-20'>
-                        <div className='flex bg-white items-center mr-4 p-2 w-12 h-12 rounded-lg'><img src='/Imgs/email.png' alt='logo'/></div>
+                        <div className='flex bg-white items-center mr-4 p-2 w-12 h-12 rounded-lg'><AiOutlineMail className='w-12 h-12' /></div>
                         <div>
                         <span className='font-Poppins text-base  text-white font-semibold' >Email</span><br></br>
                         <span className='font-Poppins text-sm text-white font-semibold' >inquiries@blockchainslc.com</span>
                         </div>
                     </div>
                         <div className='flex items-center'>
-                        <div className='flex bg-white items-center p-2 w-12 h-12 mr-4 rounded-lg'><img src='/Imgs/call.png' alt='logo'/></div>
+                        <div className='flex bg-white items-center p-2 w-12 h-12 mr-4 rounded-lg'><BsTelephone className='w-10 h-10'/></div>
                             <div>
                             <span className='font-Poppins text-base text-white block font-semibold'>Phone</span>
                         <span className='font-Poppins text-sm text-white font-semibold' >(801) 960-2447 </span>

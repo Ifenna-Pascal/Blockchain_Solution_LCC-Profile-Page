@@ -44,18 +44,18 @@ function Twos({ img, content, pos }) {
 
 function Review ({img, title, reviewer, content}) {
     return (
-        <div className='w-full flex-col lg:flex-row flex justify-between bg-[#22223A] px-6 lg:px-12 py-12 lg:py-16'>
+        <div className='w-full flex-col lg:flex-row flex justify-between h-full bg-[#22223A] px-6 lg:px-12 py-12 lg:py-16'>
             <div className='lg:basis-[32%] flex justify-self-center items-center  mb-4 lg:mb-0 lg:mr-10'>
                 <img src={img} className='bg-cover w-full' />
             </div> 
-            <div className='flex-1 p-1 lg:p-3'>
-            <div className="flex capitalize gap-x-2 mb-2  lg:text-center items-center justify-start lg:justify-center">
+            <div className='flex-1 p-1 lg:ml-12 lg:p-3'>
+            <div className="flex capitalize gap-x-2 mb-2  lg:text-center items-center justify-start lg:justify-start">
                     <div className="w-10 h-[4px] bg-[#eb6282]"></div>
-                        <span className="text-white  text-[#BE173F] text-lg font-normal text-center  font-Poppins">
+                        <span className="text-white  text-[#BE173F] text-lg font-normal text-left font-Poppins">
                             {title}
                         </span>
                     </div>
-                    <h1 className='lg:text-4xl text-left text-3xl font-Poppins lg:text-center font-bold mb-4 lg:mb-6 tracking-wider text-white leading-10'>{reviewer}</h1>
+                    <h1 className='lg:text-4xl text-left text-3xl font-Poppins lg:text-left font-bold mb-4 lg:mb-6 tracking-wider text-white leading-10'>{reviewer}</h1>
                     <p className='text-base font-Poppins mb-6 text-left tracking-wide text-white'>{content}</p>
             </div>     
         </div>
@@ -70,7 +70,7 @@ function Teams() {
           </div> 
         <div className='lg:max-w-[65%] mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
         <Carousel axis='horizontal' autoFocus={true} infiniteLoop={true} interval={3000} showArrows={false} showThumbs={false} autoPlay={true} showIndicators={true}>
-            <Review img="/Imgs/review_1.png" title="Review 1" reviewer ="Mike Becker"  content="Placeholder review" />
+            <Review img="/Imgs/review_1.png" title="Review 1" reviewer ="Mike Becker"  content="' '" />
             <Review img="/Imgs/review_2.png" title="Review 2" reviewer ="Anonymous" content="Blockchain Solutions LLC understood my concept and brought it to a whole new level… " />
             <Review img="/Imgs/review_3.png"  title="Review 3" reviewer= "Anonymous" content="For me, blockchain is about paving the way toward equality. From the moment I spoke with [Blockchain Solutions LLC], I felt understood and appreciated. I knew this was a company I could trust."/>
         </Carousel>

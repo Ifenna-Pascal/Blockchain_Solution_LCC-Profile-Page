@@ -27,19 +27,19 @@ function Nav() {
         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
         <ul className="flex flex-col mt-4 md:flex-row md:space-x-14 md:mt-0 md:text-sm md:font-medium">
         <li>
-        <Link to="services" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block py-2 hover:cursor-pointer pr-4 pl-3 text-white rounded text-base  hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent md:p-0 dark:text-white" aria-current="page"> Services </Link>
+        <Link to="services" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block py-4 hover:cursor-pointer pr-4 pl-3 text-white rounded text-base md:border-none border-b hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent md:p-0 dark:text-white" aria-current="page"> Services </Link>
         </li>
         <li>
-        <Link to="team" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block py-2 hover:cursor-pointer pr-4 pl-3 text-white text-base font-Poppins border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#eb6282] hover:font-semibold tracking-wider md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> Team </Link>
+        <Link to="team" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block py-4 hover:cursor-pointer pr-4 pl-3 text-white text-base font-Poppins border-b border-gray-100 hover:text-[#eb6282]  md:hover:bg-transparent md:border-0 md:hover:text-[#eb6282] hover:font-semibold tracking-wider md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> Team </Link>
         </li>
         <li>
-        <a href='https://www.linkedin.com/company/75016127' target="_blank" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block py-2 hover:cursor-pointer pr-4 pl-3 text-white text-base font-Poppins border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#eb6282] hover:font-semibold tracking-wider md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog </a>
+        <a href='https://www.linkedin.com/company/75016127' target="_blank" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block py-4 hover:cursor-pointer pr-4 pl-3 text-white text-base font-Poppins border-b border-gray-100 hover:text-[#eb6282]  md:hover:bg-transparent md:border-0 md:hover:text-[#eb6282] hover:font-semibold tracking-wider md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog </a>
         </li>
         <li>
-        <Link to="contact" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block py-2 hover:cursor-pointer pr-4 pl-3 text-white text-base font-Poppins border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#eb6282] hover:font-semibold tracking-wider md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact us </Link>
+        <Link to="contact" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block py-4 hover:cursor-pointer pr-4 pl-3 text-white text-base font-Poppins border-b border-gray-100 hover:text-[#eb6282]  md:hover:bg-transparent md:border-0 md:hover:text-[#eb6282] hover:font-semibold tracking-wider md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact us </Link>
         </li>
         {/* <li>
-        <Link className="block py-2 hover:cursor-pointer pr-4 pl-3 text-white text-base font-Poppins hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#eb6282] hover:font-semibold tracking-wider md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact </Link>
+        <Link className="block py-4 hover:cursor-pointer pr-4 pl-3 text-white text-base font-Poppins hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#eb6282] hover:font-semibold tracking-wider md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact </Link>
         </li> */}
         </ul>
         </div>

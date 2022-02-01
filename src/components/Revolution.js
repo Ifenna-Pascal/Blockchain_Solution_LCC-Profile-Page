@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import bg from "../images/hero_bgg.svg";
+import bg from "../images/section3.jpg";
 import { Revolution_util as utils} from "../utitlities/revolution_util";
 
 

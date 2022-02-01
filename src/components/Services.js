@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from "../images/blue_bg.svg";
+import bg from "../images/section.jpg";
 import { services } from '../utitlities/revolution_util';
 import Benefits from './Benefits';
 import Contact_us from './Contact_us';
