@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-reveal';
 
 function Contact() {
   return (
@@ -6,7 +7,7 @@ function Contact() {
           <div className='md:w-[85%] mx-auto'>
             <div className='flex flex-col lg:flex-row items-center justify-between'>
                 <div className='lg:w-[42%] md:w-[90%] w-full px-4 md:px-0 mx-5 lg:mx-0 mb-10  mr-16 '> 
-                    <img src="/Imgs/contact.svg" className='w-full bg-cover' />
+                   <Fade bottom={true}> <img src="/Imgs/contact.svg" className='w-full bg-cover' /></Fade>
                 </div>
                <div className='md:flex-1 w-[90%] mx-auto md:w-full justify-items-start md:justify-start justify-center justify-self-start'>
                <div className="flex capitalize mb-8 md:mb-16 gap-x-2 text-center items-center md:justify-center">

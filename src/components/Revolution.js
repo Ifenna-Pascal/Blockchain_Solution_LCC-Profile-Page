@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import { Fade } from 'react-reveal';
 import bg from "../images/section3.jpg";
 import { Revolution_util as utils} from "../utitlities/revolution_util";
 
 
 function OneService ({title, content, img, dat}) {
     return (
-        <div className={`flex flex-col my-5 md:my-10  gap-y-5 md:gap-y-3 bg-transparent rounded-md`}>
-        <div className='rounded-md mx-auto p-3  flex flex-col items-center' style={{backgroundColor:dat}} > <img src={img} className='bg-cover w-8 h-8' /> </div>
-        <span className='text-[#BE173F] w-[76%] mx-auto text-center font-Inter font-semibold text-2xl md:mb-2 tracking-wider'>{title}</span>
-        <p className='text-white font-Poppins px-8 md:px-4 text-base'>{content}</p>
-        </div>
+       <Fade delay={500} bottom={true}>
+            <div className={`flex flex-col my-5 md:my-10  gap-y-5 md:gap-y-3 bg-transparent rounded-md`}>
+                <div className='rounded-md mx-auto p-3  flex flex-col items-center' style={{backgroundColor:dat}} > <img src={img} className='bg-cover w-8 h-8' /> </div>
+                <span className='text-[#BE173F] w-[76%] mx-auto text-center font-Inter font-semibold text-2xl md:mb-2 tracking-wider'>{title}</span>
+                <p className='text-white font-Poppins px-8 md:px-4 text-base'>{content}</p>
+            </div>
+       </Fade>
     )
 }
 

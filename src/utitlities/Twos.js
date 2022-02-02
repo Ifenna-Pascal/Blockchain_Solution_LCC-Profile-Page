@@ -1,4 +1,5 @@
 import React from 'react';
+import { Zoom } from 'react-reveal';
 
 function Twos({ img, content, pos }) {
   return (
@@ -13,7 +14,7 @@ function Twos({ img, content, pos }) {
             pos ? 'lg:justify-start' : 'lg:justify-center'
           } justify-center items-center lg:mr-8`}
         >
-          <img src={img} alt="image" className="bg-cover w-full" />
+         <Zoom delay={500} bottom={true}> <img src={img} alt="image" className="bg-cover w-full" /></Zoom>
         </div>
         <div className="lg:flex-1 items-start justify-start  text-left">{content}</div>
       </div>

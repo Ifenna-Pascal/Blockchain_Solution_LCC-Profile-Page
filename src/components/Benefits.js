@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade, Zoom } from 'react-reveal';
 import bg from "../images/section3.jpg";
 import { Benefit_util as utils1, Benefit_util2 as utils2 } from '../utitlities/benefit_list';
 
@@ -11,23 +12,27 @@ function Benefit_content () {
                         utils1.map( (util, index) => {
                             const dat = `${util.color}`
                             return (
-                                <div key={index} className='flex items-center gap-x-4 mb-9'>
+                               <Fade delay={500} bottom={true}>
+                                  <div key={index} className='flex items-center gap-x-4 mb-9'>
                                 <div className={`flex p-3 w-14 h-14 rounded-lg`} style={{backgroundColor:dat}}><img src={util.img} className='w-full' alt='logo'/></div>
                                 <span className={`font-Inter text-lg capitalize tracking-wider text-white font-normal`}>{util.name}</span>
-                            </div>  
+                                </div>  
+                               </Fade>
                             )
                         })
                     }                    
                 </div>
-                <div className='flex md:ml-8 flex-col '>
+                <div className='flex md:ml-8 md:mt-0 -mt-1 flex-col '>
                 {
                         utils2.map( (util, index) => {
                             const dat = `${util.color}`
                             return (
-                                <div key={index} className='flex items-center gap-x-4 mb-9'>
-                                <div className={`flex p-3 w-14 h-14 rounded-lg`} style={{backgroundColor:dat}}><img src={util.img} className='w-full' alt='logo'/></div>
-                                <span className={`font-Inter text-lg capitalize tracking-wider text-white font-normal`}>{util.name}</span>
-                            </div>  
+                                <Fade delay={500} bottom={true}>
+                                  <div key={index} className='flex items-center gap-x-4 mb-9'>
+                                  <div className={`flex p-3 w-14 h-14 rounded-lg`} style={{backgroundColor:dat}}><img src={util.img} className='w-full' alt='logo'/></div>
+                                  <span className={`font-Inter text-lg capitalize tracking-wider text-white font-normal`}>{util.name}</span>
+                                </div>  
+                                </Fade>
                             )
                         })
                     }     
@@ -50,7 +55,7 @@ function Twos({ img, content, pos }) {
               pos ? 'justify-start' : 'lg:justify-center'
             } lg:justify-center lg:items-center`}
           >
-            <img src={img} alt="image" className="bg-cover  lg:w-[87%]" />
+           <Zoom delay={500}>  <img src={img} alt="image" className="bg-cover  lg:w-[87%]" /> </Zoom>
           </div>
           <div className="flex-1 items-start justify-start  text-left">{content}</div>
         </div>

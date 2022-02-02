@@ -1,18 +1,21 @@
 import React from 'react';
+import { Fade } from 'react-reveal';
 import bg from "../images/section.jpg";
 import { services } from '../utitlities/revolution_util';
 import Benefits from './Benefits';
 import Contact_us from './Contact_us';
 import Revolution from './Revolution';
 
-function EachService ({pos, title, content, img, color}) {
+function EachService ({pos, title, count, content, img, color}) {
     return (
         <div className={`${pos ? "lg:mb-8 rounded-b-lg" : "rounded-b-lg lg:rounded-b-none"} md:mb-12  mb-8 lg:mb-0` } >
-            <div className={`flex flex-col px-3 py-12  bg-[#0A0000] shadow-md rounded-xl ${pos ? "rounded-b-lg" : "rounded-b-none"}`}>
+          <Fade delay={1000} right={ (count % 2 === 0) ? true : false  } left={ (count % 2 !== 0) ? true : false  }>
+          <div className={`flex flex-col px-3 py-12  bg-[#0A0000] shadow-md rounded-xl ${pos ? "rounded-b-lg" : "rounded-b-none"}`}>
             <div className={` rounded-lg   mx-auto mb-5 p-3 flex flex-col items-center`}style={{backgroundColor:color}} > <img src={img} className='bg-cover w-9 h-9' /> </div>
             <span className='text-[#BE173F] w-[90%] mx-auto mb-5 text-center font-Inter font-semibold text-xl'>{title}</span>
             <p className='text-white font-Poppins px-4 text-base'>{content}</p>
         </div>
+          </Fade>
         </div>
     )
 }
@@ -35,7 +38,7 @@ function Services() {
                 <div className='grid relative justify-center items-center md:items-end grid-cols-1 mt-12 md:mt-24 px-8 gap-x-8 lg:grid-cols-4 md:grid-cols-2'>
                     {
                         services.map((service, index) => (
-                            <EachService key={index} color={service.color} pos={service.pos} img={service.img} title={service.title} content={service.content} />
+                            <EachService key={index} count={index} color={service.color} pos={service.pos} img={service.img} title={service.title} content={service.content} />
                         ))
                     }
                 </div>
