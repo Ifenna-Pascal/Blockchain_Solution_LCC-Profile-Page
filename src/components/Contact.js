@@ -5,7 +5,7 @@ function Contact() {
       <div className='bg-black md:container my-24 w-full'>
           <div className='md:w-[85%] mx-auto'>
             <div className='flex flex-col lg:flex-row items-center justify-between'>
-                <div className='md:w-[42%] w-full px-4 md:px-0 mx-5 md:mx-0 mb-10 md:mb-0 mr-16 '> 
+                <div className='lg:w-[42%] md:w-[90%] w-full px-4 md:px-0 mx-5 lg:mx-0 mb-10  mr-16 '> 
                     <img src="/Imgs/contact.svg" className='w-full bg-cover' />
                 </div>
                <div className='md:flex-1 w-[90%] mx-auto md:w-full justify-items-start md:justify-start justify-center justify-self-start'>

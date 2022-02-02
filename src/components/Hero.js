@@ -4,7 +4,7 @@ import { animateScroll as scroll } from "react-scroll";
 
 function Hero() {
   return (
-    <div className='md:container mx-auto'>
+    <div className='lg:container mx-auto'>
              <div style={{backgroundImage: `url(${bg})`}} className='h-[36rem] md:h-[42rem] mb-6 w-[100%] md:container mx-auto bg-no-repeat bg-cover'>
           <div className='py-12 mx-auto items-center w-full justify-center h-full  md:justify-between flex'>
             <div className='flex md:text-left text-center flex-col  items-center md:items-start  flex-1 gap-y-4'>

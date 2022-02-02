@@ -7,7 +7,7 @@ import Revolution from './Revolution';
 
 function EachService ({pos, title, content, img, color}) {
     return (
-        <div className={`${pos ? "md:mb-8 rounded-b-lg" : "rounded-b-lg md:rounded-b-none"}  mb-8 md:mb-0` } >
+        <div className={`${pos ? "lg:mb-8 rounded-b-lg" : "rounded-b-lg lg:rounded-b-none"} md:mb-12  mb-8 lg:mb-0` } >
             <div className={`flex flex-col px-3 py-12  bg-[#0A0000] shadow-md rounded-xl ${pos ? "rounded-b-lg" : "rounded-b-none"}`}>
             <div className={` rounded-lg   mx-auto mb-5 p-3 flex flex-col items-center`}style={{backgroundColor:color}} > <img src={img} className='bg-cover w-9 h-9' /> </div>
             <span className='text-[#BE173F] w-[90%] mx-auto mb-5 text-center font-Inter font-semibold text-xl'>{title}</span>

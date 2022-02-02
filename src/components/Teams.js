@@ -30,7 +30,7 @@ function Twos({ img, content, pos }) {
           } flex-col items-center justify-center lg:justify-between `}
         >
           <div
-            className={`p-8 lg:p-10 flex ${
+            className={`p-8 md:py-8 md:px-0  md:-ml-16 lg:-ml-0 lg:p-10 flex ${
               pos ? 'lg:justify-start' : 'lg:justify-center'
             } lg:justify-center lg:items-center`}
           >
@@ -68,7 +68,7 @@ function Teams() {
           <div className='lg:container w-full  mx-auto'>
                 <Twos pos={false} img="/Imgs/team.png" content={<Team_Content/>} />
           </div> 
-        <div className='lg:max-w-[65%] mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
+        <div className='lg:max-w-[65%] md:max-w-[92%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
         <Carousel axis='horizontal' autoFocus={true} infiniteLoop={true} interval={3000} showArrows={false} showThumbs={false} autoPlay={true} showIndicators={true}>
             <Review img="/Imgs/review_1.png" title="Review 1" reviewer ="Mike Becker"  content="' '" />
             <Review img="/Imgs/review_2.png" title="Review 2" reviewer ="Anonymous" content="Blockchain Solutions LLC understood my concept and brought it to a whole new level… " />
