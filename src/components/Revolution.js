@@ -4,10 +4,10 @@ import bg from "../images/section3.jpg";
 import { Revolution_util as utils} from "../utitlities/revolution_util";
 
 
-function OneService ({title, content, img, dat}) {
+function OneService ({title, content, count, img, dat}) {
     return (
        <Fade delay={500} bottom={true}>
-            <div className={`flex flex-col my-5 md:my-10  gap-y-5 md:gap-y-3 bg-transparent rounded-md`}>
+            <div data-aos="fade-up" className={`flex flex-col my-5 md:my-10  gap-y-5 md:gap-y-3 bg-transparent rounded-md`}>
                 <div className='rounded-md mx-auto p-3  flex flex-col items-center' style={{backgroundColor:dat}} > <img src={img} className='bg-cover w-8 h-8' /> </div>
                 <span className='text-[#BE173F] w-[76%] mx-auto text-center font-Inter font-semibold text-2xl md:mb-2 tracking-wider'>{title}</span>
                 <p className='text-white font-Poppins px-8 md:px-4 text-base'>{content}</p>
@@ -17,15 +17,9 @@ function OneService ({title, content, img, dat}) {
 }
 
 function Revolution() {
-    // const [show, setShow] = useState(false);
-    // const [array, setArray] = useState([])
-    // useEffect(()=> {
-    //     const newArray = []
-    //     for ( var i = 0; i = show ? utils.length : 7 ; i++) {
-    //         newArray.push(utils[i]);
-    //         setArray(newArray)
-    //     }
-    // }, [show])
+    const [show, setShow] = useState(false);
+    let num = show ? 9 :7;
+     const arrays = utils.slice(0,num);
   return (
       <div className='bg-cover bg-no-repeat' style={{backgroundImage: `url(${bg})`}}>
         <div className='flex  md:mt-10 mb-2 flex-col gap-y-4'>
@@ -40,16 +34,16 @@ function Revolution() {
             </div>
             <div className='grid relative grid-cols-1 mt-6 md:mt-12 mb-8 gap-x-8 lg:grid-cols-4 md:grid-cols-2'>
                  {
-                     utils.map((util, index) => {
+                     arrays.map((util, index) => {
                          return (
-                             <OneService key={index} title={util.title} img={util.img} dat={util.color} content={util.content} />
+                             <OneService count={index} key={index} title={util.title} img={util.img} dat={util.color} content={util.content} />
                          )
                      })
                      
                  }  
                   <div className={`flex flex-col mt-8 md:my-10  gap-y-3 bg-transparent rounded-md`}>
-                        <div className='rounded-md mx-auto p-4  bg-[#BE173F] flex flex-col hover:cursor-pointer items-center'> <span className='text-white font-bold text-2xl font-Poppins'>+3</span></div>
-                        <span className='text-white w-[76%] mx-auto text-center font-Poppins font-semibold text-2xl mb-2 tracking-wider'>see more</span>
+                        <div onClick={() => setShow(!show)} className='rounded-md mx-auto p-4  bg-[#BE173F] flex flex-col hover:cursor-pointer items-center'> <span className='text-white font-bold text-2xl font-Poppins'>{ show ? "-3" : "+3" }</span></div>
+                        <span className='text-white w-[76%] mx-auto text-center font-Poppins font-semibold text-2xl mb-2 tracking-wider'>{ show ? "Show less" : "Show more" }</span>
                     </div>
             </div>
       </div>

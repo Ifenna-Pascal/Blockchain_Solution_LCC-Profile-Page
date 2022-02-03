@@ -3,6 +3,7 @@ import { Fade, Zoom } from 'react-reveal';
 import bg from "../images/section3.jpg";
 import { Benefit_util as utils1, Benefit_util2 as utils2 } from '../utitlities/benefit_list';
 
+
 function Benefit_content () {
     return (
         <div>

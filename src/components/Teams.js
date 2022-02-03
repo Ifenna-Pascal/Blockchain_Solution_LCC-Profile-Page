@@ -1,7 +1,8 @@
 import React from 'react';
 // import Twos from '../utitlities/Twos';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Team_Content () {
     return (
@@ -34,7 +35,9 @@ function Twos({ img, content, pos }) {
               pos ? 'lg:justify-start' : 'lg:justify-center'
             } lg:justify-center lg:items-center`}
           >
-            <img src={img} alt="image" className="bg-cover w-[70%] lg:w-[65%]" />
+          <ScrollAnimation animateIn="fadeIn">
+          <img src={img} alt="image" className="bg-cover w-[70%] lg:w-[65%]" />
+          </ScrollAnimation>
           </div>
           <div className="basis-[80%] items-start justify-start  text-left">{content}</div>
         </div>
