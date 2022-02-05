@@ -12,7 +12,7 @@ function Twos({ img, content, pos }) {
         <div
           className={`lg:p-6 py-8 flex ${
             pos ? 'lg:justify-start' : 'lg:justify-center'
-          } justify-center items-center lg:mr-8`}
+          }  items-center lg:mr-8`}
         >
          <Zoom delay={500} bottom={true}> <img src={img} alt="image" className="bg-cover w-full" /></Zoom>
         </div>

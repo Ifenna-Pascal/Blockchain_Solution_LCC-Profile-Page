@@ -23,7 +23,7 @@ function EachService ({pos, title, count, content, img, color}) {
 
 function Services() {
   return (
-      <div className="md:container mx-auto w-full" id='services'>
+      <div className="lg:container mx-auto w-full mt-12" id='services'>
           <div className='pt-10 flex flex-col items-center justify-center' style={{backgroundImage: `url(${bg})`}}>
                 <div className='flex flex-col gap-y-4'>
                     <div className="flex flex-col md:flex-row gap-y-3 uppercase gap-x-2 text-center items-center justify-center">
@@ -45,7 +45,7 @@ function Services() {
             </div>
             <div>
             </div>
-            <div className='mx-auto py-20 gap-y-12 flex flex-col items-center  justify-center'>
+            <div className='mx-auto py-20 gap-y-12 flex flex-col items-center justify-center'>
                 <Revolution />
                 <Benefits />
                 <Contact_us />

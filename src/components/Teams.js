@@ -1,12 +1,12 @@
 import React from 'react';
-// import Twos from '../utitlities/Twos';
+import bg from "../images/section3.jpg";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 function Team_Content () {
     return (
-        <div className='flex items-start lg:items-center flex-col px-8 gap-y-2 lg:justify-center'>
+        <div className='flex items-start  lg:items-center flex-col px-4 gap-y-2 lg:justify-center'>
              <div className="flex capitalize gap-x-2 text-center items-center justify-center">
                     <div className="w-8 h-[4px] bg-[#eb6282]"></div>
                         <span className="text-white  text-[#BE173F] text-base font-normal text-center  font-Poppins">
@@ -31,13 +31,13 @@ function Twos({ img, content, pos }) {
           } flex-col items-center justify-center lg:justify-between `}
         >
           <div
-            className={`p-8 md:py-8 md:px-0  md:-ml-16 lg:-ml-0 lg:p-10 flex ${
-              pos ? 'lg:justify-start' : 'lg:justify-center'
-            } lg:justify-center lg:items-center`}
+            className={`md:py-8 md:px-0 md:-ml-40 -ml-28     px-4 lg:-ml-0 lg:p-5 flex flex-col  items-start lg:items-end`}
           >
-          <ScrollAnimation animateIn="fadeIn">
-          <img src={img} alt="image" className="bg-cover w-[70%] lg:w-[65%]" />
-          </ScrollAnimation>
+          <img src={img} alt="image" className="bg-cover flex w-[70%] lg:w-[75%]"/>
+           <div className='text-left lg:text-right py-2 text-lg md:text-xl font-Poppins'>
+           <span className='text-white  block'>David Ring</span>
+            <span className='text-[#BE173F] tracking-widest font-bold'>C.E.O</span>
+           </div>
           </div>
           <div className="basis-[80%] items-start justify-start  text-left">{content}</div>
         </div>
@@ -47,7 +47,7 @@ function Twos({ img, content, pos }) {
 
 function Review ({img, title, reviewer, content}) {
     return (
-        <div className='w-full flex-col lg:flex-row flex justify-between h-full bg-[#22223A] px-6 lg:px-12 py-12 lg:py-16'>
+        <div className='w-full flex-col lg:flex-row flex justify-between h-full bg-cover bg-contain px-6 lg:px-12 py-12 lg:py-16'  style={{backgroundImage: `url(${bg})`}}>
             <div className='lg:basis-[32%] flex justify-self-center items-center  mb-4 lg:mb-0 lg:mr-10'>
                 <img src={img} className='bg-cover w-full' />
             </div> 
@@ -67,9 +67,9 @@ function Review ({img, title, reviewer, content}) {
 
 function Teams() {
   return (
-      <div className='bg-black lg:mb-20 w-full' id='team'>
+      <div className='lg:mb-20 w-full' id='team'>
           <div className='lg:container w-full  mx-auto'>
-                <Twos pos={false} img="/Imgs/team.png" content={<Team_Content/>} />
+                <Twos  img="/Imgs/team.png" content={<Team_Content/>} />
           </div> 
         <div className='lg:max-w-[65%] md:max-w-[92%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
         <Carousel axis='horizontal' autoFocus={true} infiniteLoop={true} interval={3000} showArrows={false} showThumbs={false} autoPlay={true} showIndicators={true}>

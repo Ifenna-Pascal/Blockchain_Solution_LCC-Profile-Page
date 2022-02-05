@@ -51,23 +51,9 @@ export const Revolution_util = [
         display: false
     },
     {
-        title: "Logistics",
-        content: "Authenticatable and verifiable assets through NFTs and wallets",
-        img: "/Imgs/identity.png",
-        color: "rgb(201, 201, 248)",
-        display: true
-    },
-    {
         title: "Retail",
         content: "Connecting farm to family",
         img: "/Imgs/security.png",
-        color: "#f7def7",
-        display: true
-    },
-    {
-        title: "Voting",
-        content: "Transparent and secure voting",
-        img: "/Imgs/voting.png",
         color: "#f7def7",
         display: true
     },
