@@ -43,6 +43,7 @@ function Contact() {
           setSuccess(true)
         })
         .catch((err) => {
+          console.log(err);
           setLoading(false)
           setError(true)
         });
