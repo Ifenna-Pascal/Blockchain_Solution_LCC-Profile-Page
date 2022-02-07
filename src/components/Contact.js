@@ -1,6 +1,7 @@
 import { send } from 'emailjs-com';
 import React, {useState} from 'react';
 import { Fade } from 'react-reveal';
+// import  dotenv from 'dotenv';
 
 function Contact() {
   const initialState = {
@@ -20,19 +21,19 @@ function Contact() {
     e.preventDefault();
     setLoading(true)
     send(
-        'service_78i03qh',
-        'template_mcbw1ye',
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID1,
         data,
-        'user_lkbG2582yvwX2KUsaPw0U'
+        process.env.USER_ID
       )
         .then((response) => {
             if(response.status === 200) {
                 send(
-                    'service_78i03qh',
-                    'template_tvk7oxe',
-                    data,
-                    'user_lkbG2582yvwX2KUsaPw0U'
-                  )
+                  process.env.SERVICE_ID,
+                  process.env.TEMPLATE_ID2,
+                  data,
+                  'user_lkbG2582yvwX2KUsaPw0U'
+                )
             }else {
                 setError(true)
             }
@@ -62,7 +63,8 @@ function Contact() {
                         </span>
                     </div>
                    <form onSubmit={onSubmit}>
-                    {
+                    { 
+                        console.log(process.env.USER_ID),
                         error && (
                             <div id="alert-2" className="flex p-4 mb-4 bg-red-100 rounded-lg dark:bg-red-200" role="alert">
                                 <svg className="flex-shrink-0 w-5 h-5 text-red-700 dark:text-red-800" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -97,7 +99,7 @@ function Contact() {
                     <div className='col-span-2'>
                         <textarea placeholder="Message" onChange={onChange} value={data.message} name='message' className='py-5 md:h-[14rem] h-[8rem] rounded-md px-5 text-lg tracking-wide text-gray-700 font-semibold font-Poppins w-full' ></textarea>
                     </div>
-                   <div className='col-span-2 md:w-[70%] md:mx-auto  flex items-start justify-start'>
+                   <div className='col-span-2 md:w-[70%] md:mx-auto md:items-center md:justify-center flex items-start justify-start'>
                     <button className='bg-[#BE173F] md:justify-self-center md:-ml-0   md:w-[60%] mb-6 text-white text-lg font-Poppins px-10 py-4 rounded-lg'>{loading ? "Sending....": "Contact us"}</button>
                    </div>
                 </div>
