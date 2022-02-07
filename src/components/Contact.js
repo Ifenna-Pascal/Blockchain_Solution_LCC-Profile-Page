@@ -97,8 +97,8 @@ function Contact() {
                     <div className='col-span-2'>
                         <textarea placeholder="Message" onChange={onChange} value={data.message} name='message' className='py-5 md:h-[14rem] h-[8rem] rounded-md px-5 text-lg tracking-wide text-gray-700 font-semibold font-Poppins w-full' ></textarea>
                     </div>
-                   <div className='col-span-2 md:w-[70%]  justify-self-start  mx-auto'>
-                    <button className='bg-[#BE173F] md:justify-self-center -ml-48 md:-ml-0   md:w-[60%] mb-6 text-white text-lg font-Poppins px-10 py-4 rounded-lg'>{loading ? "Sending....": "Contact us"}</button>
+                   <div className='col-span-2 md:w-[70%]  flex items-start justify-start'>
+                    <button className='bg-[#BE173F] md:justify-self-center md:-ml-0   md:w-[60%] mb-6 text-white text-lg font-Poppins px-10 py-4 rounded-lg'>{loading ? "Sending....": "Contact us"}</button>
                    </div>
                 </div>
                    </form>
