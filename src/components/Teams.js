@@ -28,10 +28,10 @@ function Twos({ img, content, pos }) {
         <div
           className={`flex ${
             pos ? 'lg:flex-row' : 'lg:flex-row-reverse'
-          } flex-col items-center justify-center lg:justify-between `}
+          } flex-col items-start justify-center lg:justify-between `}
         >
           <div
-            className={`md:py-8 md:px-0 md:-ml-40 -ml-28     px-4 lg:-ml-0 lg:p-5 flex flex-col  items-start lg:items-end`}
+            className={`md:py-8 md:px-4  px-4 lg:-ml-0 lg:p-5 flex flex-col  items-start lg:items-end`}
           >
           <img src={img} alt="image" className="bg-cover flex w-[70%] lg:w-[75%]"/>
            <div className='text-left lg:text-right py-2 text-lg md:text-xl font-Poppins'>
