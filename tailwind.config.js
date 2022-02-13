@@ -17,6 +17,6 @@ module.exports = {
       }
     },
   },
-  mode: 'jit',
+  // mode: 'jit',
   plugins: [ require('@themesberg/flowbite/plugin')],
 }

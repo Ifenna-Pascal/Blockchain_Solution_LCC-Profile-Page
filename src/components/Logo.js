@@ -3,7 +3,7 @@ import { animateScroll as scroll } from "react-scroll";
 
 function Logo({footer}) {
   return (
-      <div onClick={() => scroll.scrollToTop()} className='flex items-start hover:cursor-pointer gap-x-1  md:justify-start'>
+      <div onClick={() => scroll.scrollToTop()} className='flex px-3 items-start hover:cursor-pointer gap-x-1  md:justify-start'>
           <div>
               <img src='/Imgs/Blockchain 1.png' alt='Logo'  />
           </div>
