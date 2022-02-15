@@ -38,8 +38,8 @@ function Home() {
             <Services />
             <Teams />
             <Contact />
-            <Footer />`
-         </div>
+            <Footer />
+        </div>
       </div>
   );
 }

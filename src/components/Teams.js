@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from "../images/section3.jpg";
+import bg from "../images/section3.png";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
