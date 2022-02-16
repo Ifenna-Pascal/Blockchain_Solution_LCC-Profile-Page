@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
-import bg from "../images/section.png";
+import bg from "../images/section2.png";
 import { services } from '../utitlities/revolution_util';
 import Benefits from './Benefits';
 import Contact_us from './Contact_us';
@@ -23,9 +23,9 @@ function EachService ({pos, title, count, content, img, color}) {
 
 function Services() {
   return (
-      <div className="lg:container mx-auto w-full mt-12" id='services'>
+      <div className="mx-auto w-full mt-12" id='services'>
           <div className='pt-10 flex flex-col items-center justify-center' style={{backgroundImage: `url(${bg})`}}>
-                <div className='flex flex-col gap-y-4'>
+                <div className='flex flex-col md:w-[90%] mx-auto gap-y-4'>
                     <div className="flex flex-col md:flex-row gap-y-3 uppercase gap-x-2 text-center items-center justify-center">
                     <div className="w-10 h-[4px] bg-[#eb6282]"></div>
                         <span className="text-white  capitalize text-[#BE173F] text-lg font-normal text-center  font-Poppins">
@@ -35,7 +35,7 @@ function Services() {
                     <h1 className='md:text-4xl text-3xl font-Poppins text-center font-bold tracking-wider text-white leading-10'>Our Services </h1>
                     <p className='text-base font-Poppins px-4 md:px-0 text-center tracking-wide text-white'>We provide full-package solution to get your business up and running on the blockchain</p>
                 </div>
-                <div className='grid relative justify-center items-center md:items-end grid-cols-1 mt-12 md:mt-24 px-8 gap-x-8 lg:grid-cols-4 md:grid-cols-2'>
+                <div className='grid relative md:w-[94%] mx-auto justify-center items-center md:items-end grid-cols-1 mt-12 md:mt-24 px-8 gap-x-8 lg:grid-cols-4 md:grid-cols-2'>
                     {
                         services.map((service, index) => (
                             <EachService key={index} count={index} color={service.color} pos={service.pos} img={service.img} title={service.title} content={service.content} />

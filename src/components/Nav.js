@@ -17,8 +17,8 @@ function Nav() {
         window.addEventListener('scroll', changeNav);
     }, []);
   return (
-    <nav className={`sticky h-[7rem] top-0 ${scrollNav ? "bg-black" : "bg-transparent"}   lg:container z-50 border-gray-200`}>
-        <div className='w-[100%] h-full lg:container  sm:px-4 py-6 mx-auto'>
+    <nav className={`sticky h-[7rem] top-0 ${scrollNav ? "bg-black" : "bg-transparent"}   z-50 border-gray-200`}>
+        <div className='w-[90%] h-full   sm:px-4 py-6 mx-auto'>
         <div className=" flex flex-wrap bg-black justify-between items-center">
          <Logo />
         <button  data-collapse-toggle="mobile-menu" type="button" className="inline-flex items-center p-2 pr-2 mr-4  ml-3 text-xl text-white rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">

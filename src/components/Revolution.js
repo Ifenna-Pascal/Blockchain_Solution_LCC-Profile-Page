@@ -19,7 +19,7 @@ function OneService ({title, content, count, img, dat}) {
 function Revolution() {
   return (
       <div className='bg-cover bg-no-repeat' style={{backgroundImage: `url(${bg})`}}>
-        <div className='flex  md:mt-10 mb-2 flex-col gap-y-4'>
+        <div className='flex lg:w-[80%] mx-auto md:mt-10 mb-2 flex-col gap-y-4'>
                 <div className="flex flex-col md:flex-row gap-y-2 md:gap-y-0 uppercase gap-x-2 text-center items-center justify-center">
                 <div className="w-10 h-[4px] bg-[#eb6282]"></div>
                     <span className="text-white  capitalize text-[#BE173F] text-lg font-normal text-center  font-Poppins">

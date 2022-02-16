@@ -45,7 +45,7 @@ function Benefit_content () {
 
 function Twos({ img, content, pos }) {
     return (
-      <div className="lg:py-4 w-full my-5 lg:my-2">
+      <div className="lg:py-4 lg:w-[90%] mx-auto my-5 lg:my-2">
         <div
           className={`flex ${
             pos ? 'lg:flex-row' : 'lg:flex-row-reverse'
@@ -67,7 +67,7 @@ function Twos({ img, content, pos }) {
 
 function Benefits() {
   return (
-    <div className='lg:container w-full flex  lg:items-center lg:px-12 px-6 py-5 lg:py-12 lg:justify-center flex-col mx-auto bg-no-repeat bg-cover' style={{backgroundImage: `url(${bg})`}}>
+    <div className='w-full flex  lg:items-center lg:px-12 px-6 py-5 lg:py-12 lg:justify-center flex-col mx-auto bg-no-repeat bg-cover' style={{backgroundImage: `url(${bg})`}}>
     <div className='flex lg:mb-2 mb-8 flex-col gap-y-1'>
         <div className="flex gap-x-4 text-center items-center md:justify-center">
             <div className="w-10 h-[4px] bg-[#eb6282]"></div>

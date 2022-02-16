@@ -3,7 +3,7 @@ import { Zoom } from 'react-reveal';
 
 function Twos({ img, content, pos }) {
   return (
-    <div className="w-full my-2">
+    <div className="lg:w-[90%] mx-auto my-2">
       <div
         className={`flex ${
           pos ? 'lg:flex-row' : 'lg:flex-row-reverse'

@@ -50,7 +50,7 @@ function Contact() {
     setData(initialState)
   }
   return (
-      <div className='bg-black  lg:container my-24  w-full' id='contact'>
+      <div className='bg-black  my-24 lg:w-[90%] mx-auto' id='contact'>
           <div className='md:w-full mx-auto'>
             <div className='flex flex-col lg:flex-row items-center justify-between'>
                 <div className='lg:w-[42%] md:w-[90%] w-full px-4 md:px-0 mx-5 lg:mx-0 mb-10  mr-16 '> 
