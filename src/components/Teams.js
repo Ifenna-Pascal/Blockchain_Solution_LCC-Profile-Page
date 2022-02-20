@@ -47,7 +47,7 @@ function Twos({ img, content, pos }) {
 
 function Review ({img, title, reviewer, content}) {
     return (
-        <div className='w-full flex-col lg:flex-row flex justify-between bg-cover bg-contain px-6 lg:px-12 py-12 lg:py-16'  style={{backgroundImage: `url(${bg})`}}>
+        <div className='w-full flex-col lg:flex-row flex justify-between bg-cover bg-contain px-6 lg:px-12 py-12 lg:py-16 bg-[rgba(0,255,255,0.1)]'>
             <div className='lg:basis-[32%] flex justify-self-center items-center  mb-4 lg:mb-0 lg:mr-10'>
                 <img src={img} className='bg-cover w-full' />
             </div> 
