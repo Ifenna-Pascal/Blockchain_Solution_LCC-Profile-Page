@@ -47,7 +47,7 @@ function Twos({ img, content, pos }) {
 
 function Review ({img, title, reviewer, content}) {
     return (
-        <div className='w-full flex-col lg:flex-row h-full flex justify-between bg-cover bg-contain px-6 lg:px-12 py-12 lg:py-16'>
+        <div className='w-full flex-col lg:flex-row h-fit flex justify-between bg-cover bg-contain px-6 lg:px-12 py-12 lg:py-16'>
             <div className='lg:basis-[32%] flex justify-self-center items-center  mb-4 lg:mb-0 lg:mr-10'>
                 <img src={img} className='bg-cover w-full' />
             </div> 
@@ -72,7 +72,7 @@ function Teams() {
                 <Twos  img="/Imgs/team.png" content={<Team_Content/>} />
           </div> 
         <div className='lg:max-w-[65%]  bg-[rgba(0,255,255,0.1)] md:max-w-[92%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
-        <Carousel axis='horizontal' autoFocus={true} infiniteLoop={true} interval={3000} showArrows={false} showThumbs={false} autoPlay={true} showIndicators={true}>
+        <Carousel axis='horizontal' autoFocus={true} infiniteLoop={true} interval={3000} showArrows={false} className='h-full' showThumbs={false} autoPlay={true} showIndicators={true}>
             <Review img="/Imgs/review_1.png" title="Review 1" reviewer ="Mike Becker"  content="' '" />
             <Review img="/Imgs/review_2.png" title="Review 2" reviewer ="Anonymous" content="Blockchain Solutions LLC understood my concept and brought it to a whole new level… " />
             <Review img="/Imgs/review_3.png"  title="Review 3" reviewer= "Anonymous" content="For me, blockchain is about paving the way toward equality. From the moment I spoke with [Blockchain Solutions LLC], I felt understood and appreciated. I knew this was a company I could trust."/>
