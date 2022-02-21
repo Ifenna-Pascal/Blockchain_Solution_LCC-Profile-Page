@@ -30,7 +30,7 @@ function Home() {
   return (
       <div className='bg-black w-full'>
           <Nav />
-          <div className={`fixed bottom-28 ${scroll ? "flex" : "hidden"} z-20 hover:cursor-pointer items-center rounded-full bg-[#BE173F] p-3 md:p-4 right-4 md:right-6`}>
+          <div className={`fixed bottom-20 md:bottom-24 ${scroll ? "flex" : "hidden"} z-20 hover:cursor-pointer items-center rounded-full bg-[#BE173F] p-3 md:p-4 right-4 md:right-6`}>
               <AiOutlineArrowUp onClick={scrollToTop} className='text-white font-bold text-xl' />
           </div>
          <div className='overflow-hidden'>
