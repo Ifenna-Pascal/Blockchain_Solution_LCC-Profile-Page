@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Fade } from 'react-reveal';
-import bg from "../images/section3.png";
+import bg from "../images/section.png";
 import { Revolution_util as utils} from "../utitlities/revolution_util";
 
 

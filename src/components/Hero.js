@@ -5,7 +5,7 @@ import { Zoom } from 'react-reveal';
 
 function Hero() {
   return (
-    <div className='mx-auto' style={{ height: "calc(100vh - 7rem)"}}>
+    <div className='mx-auto' style={{ height: "calc(100vh - 5rem)"}}>
              <div style={{backgroundImage: `url(${bg})`}} className='mb-6 w-[100%] h-full  mx-auto bg-no-repeat bg-cover'>
           <div className='py-12 mx-auto items-center w-full justify-center md:w-[85%] h-full  md:justify-between flex'>
             <Zoom delay={1000}>

@@ -9,7 +9,7 @@ function Logo({footer}) {
           </div>
           <div className='flex flex-col items-start justify-start'>
               <span className={`uppercase text-white font-Inter ${footer ? "text-xl md:text-2xl lg:text-3xl" : "text-lg"} font-bold tracking-wider`}>Blockchain</span>
-              <span className={`${footer ? "font-semibold font-Inter tracking-wider text-base lg:text-lg" : "font-semibold text-base" } text-white -mt-1`}>Solution LLC</span>
+              <span className={`${footer ? "font-semibold font-Inter tracking-wider text-base lg:text-lg" : "font-semibold text-base" } text-white -mt-1`}>Solutions LLC</span>
           </div>
       </div>
   );

@@ -21,7 +21,7 @@ export const Nav2 = () => {
 
   return (
     <div
-      className={`lg:px-4 py-5 w-full h-[5rem]  ${
+      className={`lg:px-4 py-5 w-full h-[3rem]  ${
         scrollNav || isMenuOpen ? 'bg-white' : 'bg-transparent'
       } z-50 fixed top-0  mx-auto`}
     >

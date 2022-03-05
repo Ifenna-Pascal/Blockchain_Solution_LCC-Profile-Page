@@ -17,7 +17,7 @@ function Nav() {
         window.addEventListener('scroll', changeNav);
     }, []);
   return (
-    <nav className={`sticky h-[7rem] top-0 ${scrollNav ? "bg-black" : "bg-transparent"}   z-50 border-gray-200`}>
+    <nav className={`sticky h-[5rem] top-0 ${scrollNav ? "bg-black" : "bg-transparent"}   z-50 border-gray-200`}>
         <div className='w-[90%] h-full   sm:px-4 py-6 mx-auto'>
         <div className=" flex flex-wrap bg-black justify-between items-center">
          <Logo />

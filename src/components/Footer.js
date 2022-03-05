@@ -5,7 +5,7 @@ import { AiFillGithub } from 'react-icons/ai';
 function Footer() {
   return (
       <div className=' mx-auto' id='footer'>
-        <div className='bg-[#BE173F] flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 justify-start lg:items-end lg:justify-between py-8 lg:py-5 px-4 lg:px-10'>
+        <div className='bg-[#333333] flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 justify-start lg:items-end lg:justify-between py-8 lg:py-5 px-4 lg:px-10'>
             <Logo footer={true} />
             <span className='text-white text-left lg:text-center text-base font-Poppins'>Copyright © 2021 Blockchain Solutions LLC. All Rights Reserved</span>
             <div className='flex gap-x-3'>

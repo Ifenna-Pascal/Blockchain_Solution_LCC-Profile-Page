@@ -1,6 +1,7 @@
 import React from 'react';
 import Twos from '../utitlities/Twos';
-import bg from "../images/hero_bgg.svg";
+import bg from "../images/section5.png";
+import bg1 from "../images/section5_1.png";
 import { Link } from "react-scroll";
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
@@ -44,8 +45,10 @@ function Phone_Content () {
 
 function Contact_us() {
   return (
-    <div className=' mx-auto py-5 bg-[rgba(0,255,255,0.1)] px-6 bg-no-repeat bg-cover'>
-        <Twos img="/Imgs/phone.svg" pos={true} content={<Phone_Content/>} />
+    <div className=' mx-auto py-5 px-6 bg-no-repeat bg-cover' style={{backgroundImage: `url(${bg})`}}>
+      <div className='bg-no-repeat flex w-full flex-col justify-center items-center' style={{backgroundImage: `url(${bg1})`}}>
+      <Twos img="/Imgs/phone.svg" pos={true} content={<Phone_Content/>} />
+      </div>
     </div>
   )
 }

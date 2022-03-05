@@ -29,7 +29,7 @@ function Services() {
                     <div className="flex flex-col md:flex-row gap-y-3 uppercase gap-x-2 text-center items-center justify-center">
                     <div className="w-10 h-[4px] bg-[#eb6282]"></div>
                         <span className="text-white  capitalize text-[#BE173F] text-lg font-normal text-center  font-Poppins">
-                            Intelligent, One Crop Solution
+                            Intelligent, One Stop Solution
                         </span>
                     </div>
                     <h1 className='md:text-4xl text-3xl font-Poppins text-center font-bold tracking-wider text-white leading-10'>Our Services </h1>
