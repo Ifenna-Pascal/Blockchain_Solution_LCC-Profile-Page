@@ -45,7 +45,7 @@ function Phone_Content () {
 function Contact_us() {
   return (
     <div className=' mx-auto py-5 px-6 bg-no-repeat bg-cover' style={{backgroundImage: `url(${bg})`}}>
-      <div className='bg-no-repeat flex w-full flex-col justify-center items-center'>
+      <div className='flex w-full flex-col justify-center items-center'>
       <Twos img="/Imgs/phone.svg" pos={true} content={<Phone_Content/>} />
       </div>
     </div>
