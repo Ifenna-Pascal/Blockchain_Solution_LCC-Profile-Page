@@ -1,5 +1,6 @@
 import React from 'react';
 import bg from "../images/section3.png";
+import bg1 from "../images/section5_1.png";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -68,10 +69,10 @@ function Review ({img, title, reviewer, content}) {
 function Teams() {
   return (
       <div className='lg:mb-20 ' id='team'>
-          <div className='lg:container w-full  mx-auto'>
+          <div className='lg:container w-full  mx-auto' style={{backgroundImage: `url(${bg1})`}}>
                 <Twos  img="/Imgs/team.png" content={<Team_Content/>} />
           </div> 
-        <div className='lg:max-w-[65%]  bg-[rgba(0,255,255,0.1)] md:max-w-[92%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
+        <div className='lg:max-w-[65%]  bg-transparent md:max-w-[92%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
         <Carousel axis='horizontal' autoFocus={true} infiniteLoop={true} interval={3000} showArrows={false} className='h-full' showThumbs={false} autoPlay={true} showIndicators={true}>
             <Review img="/Imgs/review_1.png" title="Review 1" reviewer ="Mike Becker"  content="' '" />
             <Review img="/Imgs/review_2.png" title="Review 2" reviewer ="Anonymous" content="Blockchain Solutions LLC understood my concept and brought it to a whole new level… " />

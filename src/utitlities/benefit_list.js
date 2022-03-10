@@ -1,6 +1,6 @@
 export const Benefit_util = [
     {
-        name: "Transparancy",
+        name: "Transparency",
         img: "/Imgs/transparency.png",
         color: "#f8f8f2"
     },
