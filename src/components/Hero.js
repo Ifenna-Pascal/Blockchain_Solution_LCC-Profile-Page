@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from "../images/header1.png";
+import bg from "../images/header_head.png";
 import { Link } from "react-scroll";
 import { Zoom } from 'react-reveal';
 
