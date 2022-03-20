@@ -27,7 +27,7 @@ function Revolution() {
                     </span>
                 </div>
                 <h1 className='text-3xl px-4 md:px-0 md:text-4xl font-Inter text-center font-bold tracking-wider text-white leading-10'>Blockchain is the future </h1>
-                <p className='text-base px-4 md:px-0 md:w-[60%] mx-auto md:mt-4 font-Poppins text-center tracking-wide text-white'>Blockchain is revolutionalizing business, reducing operational cost, increasing secuirity and distrupting top heavy organizations</p>
+                <p className='text-base px-4 md:px-0 md:w-[60%] mx-auto md:mt-4 font-Poppins text-center tracking-wide text-white'>Blockchain is revolutionizing business, reducing operational cost, increasing secuirity and distrupting top-heavy organizations</p>
             </div>
             <div className='grid relative grid-cols-1 mt-6 md:mt-12 mb-8 gap-x-8 lg:grid-cols-4 md:grid-cols-2'>
                  {

@@ -1,7 +1,7 @@
 export const Revolution_util = [
     {
         title: "Banking",
-        content: "DeFi allows for high yielding returns",
+        content: "DeFi allows for high-yielding returns",
         img: "/Imgs/banking.png",
         color: "#f7d9f7",
         display: false
@@ -9,7 +9,7 @@ export const Revolution_util = [
     },
     {
         title: "Technology",
-        content: " NFTs and DAOs are defining what is possible",
+        content: " NFTs and DAOs are redefining what's is possible",
         img: "/Imgs/technology.png",
         color:  "#f8f8f2",
         display: false
@@ -23,7 +23,7 @@ export const Revolution_util = [
     },
     {
         title: "Healthcare",
-        content: "Secure, yet worldwide access to patent data",
+        content: "Secure, yet world-wide access to patent data",
         img: "/Imgs/health.png",
         color: "#f7d9f7",
         display: false
