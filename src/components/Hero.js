@@ -2,11 +2,12 @@ import React from 'react';
 import bg from "../images/header_head.png";
 import { Link } from "react-scroll";
 import { Zoom } from 'react-reveal';
+import './style.css'
 
 function Hero() {
   return (
-    <div className='mx-auto' style={{ height: "calc(100vh - 5rem)"}}>
-             <div style={{backgroundImage: `url(${bg})`}} className='w-[100%] h-full  mx-auto bg-no-repeat bg-cover'>
+    <div className='mx-auto' style={{ height: "calc(90vh)"}}>
+             <div style={{backgroundImage: `url(${bg})`, }} className='-z-10 background w-[100%] h-full  mx-auto bg-no-repeat bg-cover'>
           <div className='py-12 mx-auto items-center w-full justify-center md:w-[85%] h-full  md:justify-between flex'>
             <Zoom delay={1000}>
             <div className='flex md:text-left text-center flex-col mb-10 md:mb-0 items-center md:items-start  flex-1 gap-y-4'>

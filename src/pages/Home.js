@@ -6,6 +6,9 @@ import Nav from '../components/Nav';
 import Services from '../components/Services';
 import Teams from '../components/Teams';
 import { AiOutlineArrowUp } from "react-icons/ai";
+import Revolution from '../components/Revolution';
+import Benefits from '../components/Benefits';
+import Contact_us from '../components/Contact_us';
 
 function Home() {
   const [scroll, setScroll] = useState(false);
@@ -36,6 +39,9 @@ function Home() {
          <div className='overflow-hidden'>
             <Hero />
             <Services />
+            <Revolution />
+            <Benefits />
+            <Contact_us />
             <Teams />
             <Contact />
             <Footer />

@@ -1,0 +1,18 @@
+.background {
+    background: rgb(153,146,146);
+    background: linear-gradient(180deg, rgba(153,146,146,1) 7%, rgba(0,0,0,1) 100%);
+    box-shadow:  0 -40px 55px 10px black inset;
+}
+
+.services {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 16%, rgba(23,1,6,1) 50%, rgba(54,3,14,1) 100%);
+}
+
+.dark {
+    box-shadow:  0 -40px 55px 15px black inset;
+}
+
+.dark_top {
+    box-shadow:  0 -50px 55px 10px black inset;
+}

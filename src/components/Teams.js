@@ -4,6 +4,7 @@ import bg1 from "../images/section5_1.png";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import './style.css';
 
 function Team_Content () {
     return (
@@ -48,12 +49,12 @@ function Twos({ img, content, pos }) {
 
 function Review ({img, title, reviewer, content}) {
     return (
-        <div className='w-full flex-col lg:flex-row h-fit flex justify-between bg-cover bg-contain px-6 lg:px-12 py-12 lg:py-16'>
-            <div className='lg:basis-[41%] flex justify-self-center items-center  mb-4 lg:mb-0 lg:mr-10'>
-                <img src={img} className='bg-cover h-full w-full' />
+        <div className='w-full flex-col  lg:flex-row flex px-4'>
+            <div className='lg:basis-[41%]'>
+                <img src={img} className='bg-cover w-[44rem] w-full' />
             </div> 
-            <div className='flex-1 p-1 lg:ml-12 lg:p-3'>
-            <div className="flex capitalize gap-x-2 mb-2  lg:text-center items-center justify-start lg:justify-start">
+            <div className='flex-1 flex flex-col justify-center lg:p-3'>
+            <div className="flex capitalize gap-x-2 mb-2  lg:text-center items-center">
                     <div className="w-10 h-[4px] bg-[#eb6282]"></div>
                         <span className="text-white  text-[#BE173F] text-lg font-normal text-left font-Poppins">
                             {title}
@@ -68,13 +69,28 @@ function Review ({img, title, reviewer, content}) {
 
 function Teams() {
   return (
-      <div className='lg:mb-20 ' id='team'>
+      <div className='lg:mb-20 dark_top md:pt-10' id='team'>
           <div className='lg:container bg-no-repeat w-full  mx-auto' style={{backgroundImage: `url(${bg1})`}}>
                 <Twos  img="/Imgs/team.png" content={<Team_Content/>} />
           </div> 
-        <div className='lg:max-w-[65%]  bg-transparent md:max-w-[92%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
+        <div className='lg:max-w-[55%]  bg-transparent md:max-w-[80%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
         <Carousel axis='horizontal' autoFocus={true} infiniteLoop={true} interval={3000} showArrows={false} className='h-full' showThumbs={false} autoPlay={true} showIndicators={true}>
-            <Review img="/Imgs/review_1.png" title="Review 1" reviewer ="Mike Becker"  content="David optimized our smart contract, saving Black Meta a small fortune. Even our users raved about the low gas costs." />
+        <div className='w-full flex-col  lg:flex-row h-fit flex bg-cover bg-contain px-6 lg:px-12 py-12 lg:py-16'>
+            <div className='lg:basis-[50%] flex mb-4 lg:mb-0'>
+                <img src="/Imgs/review_1.png" className='bg-cover w-[42rem] h-full w-full' />
+            </div> 
+            <div className='lg:basis-[50%] flex-1 p-1 lg:p-3'>
+            <div className="flex capitalize gap-x-2 mb-2  lg:text-center items-center justify-start lg:justify-start">
+                    <div className="w-10 h-[4px] bg-[#eb6282]"></div>
+                        <span className="text-white  text-[#BE173F] text-lg font-normal text-left font-Poppins">
+                        Review 1
+                        </span>
+                    </div>
+                    <h1 className='lg:text-4xl text-left text-3xl font-Poppins lg:text-left font-bold mb-4 lg:mb-6 tracking-wider text-white leading-10'>Mike Becker</h1>
+                    <p className='text-base font-Poppins mb-6 text-left tracking-wide text-white'>David optimized our smart contract, saving Black Meta a small fortune. Even our users raved about the low gas costs.</p>
+            </div>     
+        </div>
+            {/* <Review img="/Imgs/review_1.png" title="Review 1" reviewer ="Mike Becker"  content="David optimized our smart contract, saving Black Meta a small fortune. Even our users raved about the low gas costs." /> */}
             <Review img="/Imgs/review_2.png" title="Review 2" reviewer ="Anonymous" content="Blockchain Solutions LLC understood my concept and brought it to a whole new level… " />
             <Review img="/Imgs/review_3.png"  title="Review 3" reviewer= "Anonymous" content="For me, blockchain is about paving the way toward equality. From the moment I spoke with [Blockchain Solutions LLC], I felt understood and appreciated. I knew this was a company I could trust."/>
         </Carousel>

@@ -5,10 +5,11 @@ import { services } from '../utitlities/revolution_util';
 import Benefits from './Benefits';
 import Contact_us from './Contact_us';
 import Revolution from './Revolution';
+import './style.css';
 
 function EachService ({pos, title, count, content, img, color}) {
     return (
-        <div className={`${pos ? "lg:mb-8 rounded-b-lg" : "rounded-b-lg lg:rounded-b-none"} md:mb-12  mb-8 lg:mb-0` } >
+        <div className={`${pos ? "lg:mb-8 rounded-b-lg" : "rounded-b-lg lg:rounded-b-none"} md:mb-12 mb-8 lg:mb-0` } >
           <Fade delay={1000} right={ (count % 2 === 0) ? true : false  } left={ (count % 2 !== 0) ? true : false  }>
           <div className={`flex flex-col px-3 py-12  bg-[#0A0000] shadow-md rounded-xl ${pos ? "rounded-b-lg" : "rounded-b-none"}`}>
             <div className={` rounded-lg   mx-auto mb-5 p-3 flex flex-col items-center`}style={{backgroundColor:color}} > <img src={img} className='bg-cover w-9 h-9' /> </div>
@@ -23,8 +24,9 @@ function EachService ({pos, title, count, content, img, color}) {
 
 function Services() {
   return (
-      <div className="mx-auto w-full" id='services'>
-          <div className='pt-16 flex flex-col items-center justify-center' style={{backgroundImage: `url(${bg})`}}>
+      <div className="mx-auto w-full services  dark" id='services'>
+          <div className=""></div>
+          <div className='pt-16 flex flex-col items-center justify-center'>
                 <div className='flex flex-col md:w-[90%] mx-auto gap-y-4'>
                     <div className="flex flex-col md:flex-row gap-y-3 uppercase gap-x-2 text-center items-center justify-center">
                     <div className="w-10 h-[4px] bg-[#eb6282]"></div>
@@ -45,11 +47,11 @@ function Services() {
             </div>
             <div>
             </div>
-            <div className='mx-auto py-20 gap-y-12 flex flex-col items-center justify-center'>
+            {/* <div className='mx-auto py-20 gap-y-12 flex flex-col items-center justify-center'>
                 <Revolution />
                 <Benefits />
                 <Contact_us />
-            </div>
+            </div> */}
       </div>
   );
 }
