@@ -26,7 +26,7 @@ function Nav() {
                 <Link to="services" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="py-5 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent dark:text-white" > Services </Link>
                 <Link  to="team" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="py-5 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent dark:text-white"> Team </Link>
                 <a href='https://www.linkedin.com/company/75016127' target="_blank" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="py-5 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent dark:text-white">Blog </a>
-                <Link to="services" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="py-5 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent dark:text-white"> Contact us </Link>
+                <Link to="contact" smooth={true} duration={500} offset={-84} spy={true} exact="true" className="py-5 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent dark:text-white"> Contact us </Link>
             </div>
             <div className='md:hidden flex items-center'>
                <button onClick={() => setShow(!show)}>
