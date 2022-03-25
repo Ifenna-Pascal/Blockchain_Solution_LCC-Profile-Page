@@ -49,12 +49,12 @@ function Twos({ img, content, pos }) {
 
 function Review ({img, title, reviewer, content}) {
     return (
-        <div className='w-full flex-col  lg:flex-row flex px-4'>
+        <div className='w-full flex-col lg:flex-row flex px-4'>
             <div className='lg:basis-[41%]'>
                 <img src={img} className='bg-cover w-[44rem] w-full' />
             </div> 
             <div className='flex-1 flex flex-col justify-center lg:p-3'>
-            <div className="flex capitalize gap-x-2 mb-2  lg:text-center items-center">
+            <div className="flex capitalize gap-x-2 mb-2 pb-4  lg:text-center items-center">
                     <div className="w-10 h-[4px] bg-[#eb6282]"></div>
                         <span className="text-white  text-[#BE173F] text-lg font-normal text-left font-Poppins">
                             {title}
@@ -69,7 +69,7 @@ function Review ({img, title, reviewer, content}) {
 
 function Teams() {
   return (
-      <div className='lg:mb-20 dark_top md:pt-10' id='team'>
+      <div className='lg:mb-20 dark_top pt-10' id='team'>
           <div className='lg:container bg-no-repeat w-full  mx-auto' style={{backgroundImage: `url(${bg1})`}}>
                 <Twos  img="/Imgs/team.png" content={<Team_Content/>} />
           </div> 

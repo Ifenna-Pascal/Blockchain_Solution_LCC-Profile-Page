@@ -13,6 +13,10 @@
     box-shadow:  0 -40px 55px 15px black inset;
 }
 
+.dark_bg {
+    box-shadow:  0 -40px 45px 10px black inset;
+}
+
 .dark_top {
     box-shadow:  0 -50px 55px 10px black inset;
 }
