@@ -38,7 +38,7 @@ function Twos({ img, content, pos }) {
           <img src={img} alt="image" className="bg-cover flex w-[70%] lg:w-[75%]"/>
            <div className='text-left lg:text-right py-2 text-lg md:text-xl font-Poppins'>
            <span className='text-white  block'>David Ring</span>
-            <span className='text-[#BE173F] tracking-widest font-bold'>C.E.O</span>
+            <span className='text-[#BE173F] tracking-widest font-bold'>CEO</span>
            </div>
           </div>
           <div className="basis-[80%] items-start justify-start  text-left">{content}</div>
@@ -76,8 +76,8 @@ function Teams() {
         <div className='lg:max-w-[55%]  bg-transparent md:max-w-[80%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
         <Carousel axis='horizontal' autoFocus={true} infiniteLoop={true} interval={3000} showArrows={false} className='h-full' showThumbs={false} autoPlay={true} showIndicators={true}>
         <div className='w-full flex-col  lg:flex-row h-fit flex bg-cover bg-contain px-6 lg:px-12 py-12 lg:py-16'>
-            <div className='lg:basis-[50%] flex mb-4 lg:mb-0'>
-                <img src="/Imgs/review_1.png" className='bg-cover w-[42rem] h-full w-full' />
+            <div className='lg:basis-[50%] flex mb-7 lg:mb-0'>
+                <img src="/Imgs/meta.jpeg" className='bg-cover w-[42rem] h-full w-full' />
             </div> 
             <div className='lg:basis-[50%] flex-1 p-1 lg:p-3'>
             <div className="flex capitalize gap-x-2 mb-2  lg:text-center items-center justify-start lg:justify-start">

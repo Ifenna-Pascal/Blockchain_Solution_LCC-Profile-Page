@@ -63,8 +63,7 @@ function Contact() {
                             Get Help
                         </span>
                     </div>
-                    <div className='text-white text-base font-Poppins mb-8 text-left'>There is a reason why cryptocurrencies are in the trillions of dollars. With the emergence of a global, 
-                      decentralized ledger and computing system which continues to grow faster and more powerful business is being disrupted. </div>
+                    <div className='text-white text-base font-Poppins mb-8 text-left'>We'd love to hear about you and your project. </div>
                    <form onSubmit={onSubmit}>
                     { 
                         console.log(process.env.REACT_APP_USER_ID),

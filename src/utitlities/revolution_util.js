@@ -9,7 +9,7 @@ export const Revolution_util = [
     },
     {
         title: "Technology",
-        content: " NFTs and DAOs are redefining what's is possible",
+        content: " NFTs and DAOs are redefining what is possible",
         img: "/Imgs/technology.png",
         color:  "#f8f8f2",
         display: false
@@ -23,7 +23,7 @@ export const Revolution_util = [
     },
     {
         title: "Healthcare",
-        content: "Secure, yet world-wide access to patent data",
+        content: "Secure yet world-wide access to patient data",
         img: "/Imgs/health.png",
         color: "#f7d9f7",
         display: false
@@ -84,7 +84,7 @@ export const services = [
     },
     {
         title: "Consultations",
-        content: "Succint and insightful collaboration",
+        content: "Succinct and insightful collaboration",
         img: "/Imgs/logo.png",
         pos:false,
         color: "#f7d9f7",
