@@ -7,7 +7,7 @@ function Nav() {
     const [show, setShow] = useState(false)
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if (window.scrollY >= 60) {
+        if (window.scrollY >= 120) {
             setScrollNav(true);
         } else {
             setScrollNav(false);
@@ -38,15 +38,15 @@ function Nav() {
         </div>
         <Transition
           show={show}
-          enter="transition ease-out duration-200 transform"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="transition ease-in duration-500 transform"
-          leaveFrom="opacity-100 scale-100 translate-y-full"
-          leaveTo="opacity-0 scale-95 translate-y-0"
+          enter="transition ease-in-out duration-1000 transform"
+          enterFrom="-translate-x-full"
+          enterTo="translate-x-0"
+          leave="transition ease-in-out duration-1000 transform"
+          leaveFrom="translate-x-0"
+          leaveTo="-translate-x-full"
         >
               {(ref) => (
-                <div className='md:hidden transition ease-out delay-700 bg-black'>
+                <div className='md:hidden transition flex flex-col space-y-4 ease-out w-[50%] h-screen delay-700 bg-black'>
                 <Link to="services" onClick={()=> setShow(false)} smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block ml-10 py-3 text-left hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent"> Services </Link>
                 <Link  to="team" onClick={()=> setShow(false)}  smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block ml-10 text-left py-3 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent"> Team </Link>
                 <a href='https://www.linkedin.com/company/75016127' target="_blank" smooth={true} duration={500} offset={-84} spy={true} exact="true"  className="block ml-10 text-left py-3 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent" >Blog </a>

@@ -70,7 +70,7 @@ function Review ({img, title, reviewer, content}) {
 function Teams() {
   return (
       <div className='lg:mb-20 dark_top pt-10' id='team'>
-          <div className='lg:container bg-no-repeat w-full  mx-auto' style={{backgroundImage: `url(${bg1})`}}>
+          <div className='lg:container bg-no-repeat w-[95%]  mx-auto' style={{backgroundImage: `url(${bg1})`}}>
                 <Twos  img="/Imgs/team.png" content={<Team_Content/>} />
           </div> 
         <div className='lg:max-w-[55%]  bg-transparent md:max-w-[80%]  mx-auto mt-5 lg:mt-12 mb-12 lg:mb-30'>
