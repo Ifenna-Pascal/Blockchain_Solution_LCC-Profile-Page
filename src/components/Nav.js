@@ -38,15 +38,15 @@ function Nav() {
         </div>
         <Transition
           show={show}
-          enter="transition ease-in-out duration-1000 transform"
-          enterFrom="-translate-x-full"
-          enterTo="translate-x-0"
-          leave="transition ease-in-out duration-1000 transform"
-          leaveFrom="translate-x-0"
-          leaveTo="-translate-x-full"
+          enter="transition-opacity duration-350"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-350"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
         >
               {(ref) => (
-                <div className='md:hidden transition flex flex-col space-y-4 ease-out w-[50%] h-screen delay-700 bg-black'>
+                <div className='md:hidden transition flex flex-col space-y-4 ease-out w-[50%]  delay-700 bg-black'>
                 <Link to="services" onClick={()=> setShow(false)} smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block ml-10 py-3 text-left hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent"> Services </Link>
                 <Link  to="team" onClick={()=> setShow(false)}  smooth={true} duration={500} offset={-84} spy={true} exact="true" className="block ml-10 text-left py-3 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent"> Team </Link>
                 <a href='https://www.linkedin.com/company/75016127' target="_blank" smooth={true} duration={500} offset={-84} spy={true} exact="true"  className="block ml-10 text-left py-3 hover:cursor-pointer text-white text-base transition duration-300 hover:text-[#eb6282] hover:font-semibold tracking-wider font-Poppins md:bg-transparent" >Blog </a>
